@@ -87,7 +87,7 @@ sendScoreButton.onclick = () => {
     const isClient = document.getElementById('is-client').value;
     const opinion = document.getElementById('opinion').value;
     const message = `Nombre Completo: ${name}\nCorreo: ${email}\nTeléfono: ${phone}\nRepuesto que compró en algún momento: ${previousPart}\n¿Es cliente de Autopartes RL?: ${isClient}\nOpinión corta: ${opinion}\nPuntaje: ${score} soles obtenidos.`;
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=51987654321&text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=51980927995&text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
 };
 
