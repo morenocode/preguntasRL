@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de Repuestos de Motor Chevrolet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <main class="main">
+        <div id="app">
+            <div id="question-container">
+                <h2 id="question"></h2>
+                <div id="options"></div>
+            </div>
+            <div id="result-container" style="display: none;">
+                <h2>Resultado</h2>
+                <p id="score"></p>
+                <div id="answers"></div>
+                <p id="total-soles"></p>
+                <form id="whatsapp-form">
+                    <div>
+                        <label for="name">Nombre Completo:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Correo:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="phone">Teléfono:</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div>
+                        <label for="previous-part">Repuesto que compró en algún momento:</label>
+                        <input type="text" id="previous-part" required>
+                    </div>
+                    <div>
+                        <label for="is-client">¿Es cliente de Autopartes RL?:</label>
+                        <select id="is-client" required>
+                            <option value="Sí">Sí</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="opinion">Opinión corta:</label>
+                        <textarea id="opinion" required></textarea>
+                    </div>
+                    <button type="button" id="send-score">Enviar Puntaje</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
